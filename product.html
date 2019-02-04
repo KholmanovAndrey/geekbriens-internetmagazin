@@ -13,7 +13,7 @@
     <header class="header">
         <div class="container header-flex">
             <div class="header-left">
-                <a class="logo" href="#"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+                <a class="logo" href="index.html"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
                 <form class="form" action="#">
                     <div class="browse">Browse <i class="fa fa-caret-down "></i></div>
                     <input type="text" class="search" placeholder="Search for Item...">
@@ -29,8 +29,8 @@
     <nav class="navigation">
         <div class="container">
             <ul class="menu">
-                <li><a href="#" class="menu-link">Home</a></li>
-                <li><a href="#" class="menu-link menu-active">Man</a></li>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li><a href="product.html" class="menu-link menu-active">Man</a></li>
                 <li><a href="#" class="menu-link">Women</a></li>
                 <li><a href="#" class="menu-link">Kids</a></li>
                 <li><a href="#" class="menu-link">Accoseriese</a></li>
@@ -212,7 +212,7 @@
 
             </div>
             <aside class="sidebar">
-                <ul class="category">
+                <!--<ul class="category">
                     <li><a href="#">Category <i class="fa fa-caret-up "></i></a>
                         <ul>
                             <li><a href="#">Accessories</a></li>
@@ -232,7 +232,23 @@
                     </li>
                     <li><a href="#">BRAND <i class="fa fa-caret-down "></i></a></li>
                     <li><a href="#">dESIGNER <i class="fa fa-caret-down "></i></a></li>
-                </ul>
+                </ul>-->
+                <label class="category"><input list="category-dl"></label>
+                <datalist id="category-dl">
+                    <option><a href="#">Accessories</a></option>
+                    <option><a href="#">Bags</a></option>
+                    <option><a href="#">Denim</a></option>
+                    <option><a href="#">Hoodies & Sweatshirts</a></option>
+                    <option><a href="#">Jackets & Coats</a></option>
+                    <option><a href="#">Pants</a></option>
+                    <option><a href="#">Polos</a></option>
+                    <option><a href="#">Shirts</a></option>
+                    <option><a href="#">Shoes</a></option>
+                    <option><a href="#">Shorts</a></option>
+                    <option><a href="#">Sweaters & Knits</a></option>
+                    <option><a href="#">T-Shirts</a></option>
+                    <option><a href="#">Tanks</a></option>
+                </datalist>
             </aside>
         </div>
 
@@ -308,11 +324,11 @@
                     <p class="footer-about-p">Efficiently plagiarize 24/365 action items and focused infomediaries.
                         Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
                 </div>
-                <div class="footer-information">
+                <nav class="footer-information">
                     <div class="footer-information-item">
                         <h3 class="footer-information-h3 pink">COMPANY</h3>
                         <ul class="footer-information-ul">
-                            <li><a href="#" class="footer-information-link">Home </a></li>
+                            <li><a href="index.html" class="footer-information-link">Home </a></li>
                             <li><a href="#" class="footer-information-link">Shop</a></li>
                             <li><a href="#" class="footer-information-link">About</a></li>
                             <li><a href="#" class="footer-information-link">How It Works</a></li>
@@ -332,25 +348,25 @@
                     <div class="footer-information-item">
                         <h3 class="footer-information-h3 pink">SHOP CATEGORY</h3>
                         <ul class="footer-information-ul">
-                            <li><a href="#" class="footer-information-link">Men</a></li>
+                            <li><a href="product.html" class="footer-information-link">Men</a></li>
                             <li><a href="#" class="footer-information-link">Women</a></li>
                             <li><a href="#" class="footer-information-link">Child</a></li>
                             <li><a href="#" class="footer-information-link">Apparel</a></li>
                             <li><a href="#" class="footer-information-link">Brows All</a></li>
                         </ul>
                     </div>
-                </div>
+                </nav>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container footer-bottom-content">
                 <p class="copyright">© 2017 Brand All Rights Reserved.</p>
                 <div class="socials">
-                    <div class="social"><i class="fa fa-facebook"></i></div>
-                    <div class="social active"><i class="fa fa-twitter"></i></div>
-                    <div class="social"><i class="fa fa-linkedin"></i></div>
-                    <div class="social"><i class="fa fa-pinterest-p"></i></div>
-                    <div class="social"><i class="fa fa-google-plus"></i></div>
+                    <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="social"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google-plus"></i></a>
                 </div>
             </div>
         </div>
