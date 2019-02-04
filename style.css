@@ -1041,3 +1041,35 @@ letter-spacing: 0.35px;
     height: 3px;
     background-color: #ef5b70;
 }
+
+.details-link {
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 16px;
+    padding-right: 11px;
+    
+    text-decoration: none;
+    
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.details-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 37px;
+    padding-left: 11px;
+    padding-right: 11px;
+    
+    text-decoration: none;
+        
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-left: 5px solid #ef5b70;
+    border-bottom: 1px solid #ebebeb;
+}
