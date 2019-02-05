@@ -1073,3 +1073,114 @@ letter-spacing: 0.35px;
     border-left: 5px solid #ef5b70;
     border-bottom: 1px solid #ebebeb;
 }
+
+.drop {
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    display: none;
+    padding: 20px;
+border-radius: 5px;
+background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+}
+
+.drop:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff;
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    transform: rotate(-45deg);
+    
+    position: absolute;
+    top: -7px;
+    left: 40px;;
+}
+
+.drop-flex {
+    width: 235px;
+    margin-right: 45px;
+}
+
+.drop-flex:last-of-type {
+    margin-right: 0;
+}
+
+.drop-ul {
+    list-style-type: none;
+}
+
+.drop-h3 {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    
+    color: #232323;
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+
+letter-spacing: 0.35px;
+}
+
+.drop-link {
+color: #646464;
+font-size: 14px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.35px;
+    text-decoration: none;
+}
+
+.drop-link:hover {
+    color: #f16d7f;
+}
+
+.drop-h3-m {
+    margin-top: 15px;
+}
+
+.drop-img {
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+.menu-list {
+    position: relative;
+}
+
+.menu-list:hover .drop {
+    display: flex;
+}
+
+.menu-list:hover .drop-right {
+    display: flex;
+}
+
+
+
+.drop-right {
+    top: 40px;
+    left: -610px;
+    display: none;
+    padding: 20px;
+border-radius: 5px;
+background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+}
+
+.drop-right:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff;
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    transform: rotate(-45deg);
+    
+    position: absolute;
+    top: -7px;
+    left: 640px;;
+}
