@@ -656,6 +656,9 @@ text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
 }
+.breadcrumb-link:hover {
+    color: #f16d7f;
+}
 
 .main-content {
     display: flex;
@@ -923,6 +926,10 @@ font-weight: 400;
     padding-left: 10px;
 
 border-right: 1px solid #dfdfdf;
+}
+
+.trending-link:hover {
+    color: #f16d7f;
 }
 
 .trending-link:nth-child(3n+1) {
