@@ -267,6 +267,7 @@ body {
   margin-right: 26px;
   padding: 15px 0; }
   .header-cart-drop {
+    z-index: 2;
     display: none;
     position: absolute;
     top: 100%;
@@ -1333,5 +1334,33 @@ details[open] > summary {
     .order-button2:hover {
       background-color: #ffffff;
       color: #f16d7f; }
+
+.header-cart-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px; }
+  .header-cart-product-column {
+    color: #656565;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center; }
+  .header-cart-product-link {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+
+.rating {
+  display: flex;
+  margin-bottom: 10px; }
+  .rating-star {
+    color: #e4af48;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

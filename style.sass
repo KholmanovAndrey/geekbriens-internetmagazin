@@ -303,6 +303,7 @@ body
   margin-right: 26px
   padding: 15px 0
   &-drop
+    z-index: 2
     display: none
     position: absolute
     top: 100%
@@ -1473,3 +1474,31 @@ details[open] > summary
     &:hover
       background-color: #ffffff
       color: $pink
+
+.header-cart-product
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 30px
+  &-column
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+    text-align: center
+  &-link
+    display: block
+    text-decoration: none
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 10px
+
+.rating
+  display: flex
+  margin-bottom: 10px
+  &-star
+    color: #e4af48
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
