@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -55,8 +55,8 @@
                             <div class="header-cart-product-column"><a href="#" class="cart-delete"><i class="fa fa-times-circle"></i></a></div>
                         </div>
                         <p class="header-cart-total">TOTAL<span>$500.00</span></p>
-                        <a class="header-cart-checkout" href="#">Checkout</a>
-                        <a class="header-cart-go" href="#">Go to cart</a>
+                        <a class="header-cart-checkout" href="checkout.html">Checkout</a>
+						<a class="header-cart-go" href="cart.html">Go to cart</a>
                     </div>
                 </div>
                 <a class="button" href="#">My Account <i class="fa fa-caret-down "></i></a>
@@ -216,92 +216,9 @@
         </div>
     </div>
 
-    <div class="single-product">
-        <div class="single-product-image">
-            <div class="container">
-                <img src="img/products/single/product_1.png" alt="product 1">
-            </div>
-        </div>
-        <div class="container single-product-box">
-            <h2 class="collection">WOMEN COLLECTION</h2>
-            <article class="single-product-article">
-                <h1 class="single-product-article-h1">Moschino Cheap And Chic</h1>
-                <p class="single-product-article-p">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-                <div class="single-product-article-brend">
-                    <p class="single-product-article-brend-p">MATERIAL: <a href="#" class="single-product-article-brend-a">COTTON</a></p>
-                    <p class="single-product-article-brend-p">DESIGNER: <a href="#" class="single-product-article-brend-a">BINBURHAN</a></p>
-                </div>
-                <p class="single-product-article-price">$561</p>
-            </article>
-            <form class="single-product-cart">
-                <div class="single-product-cart-top">
-                    <div class="single-product-cart-box">
-                        <h2 class="single-product-cart-top-h2">CHOOSE COLOR</h2>
-                        <select name="color" class="single-product-cart-select">
-                            <option value="red">Red</option>
-                            <option value="yellow">Yellow</option>
-                            <option value="black">Black</option>
-                        </select>
-                    </div>
-                    <div class="single-product-cart-box">
-                        <h2 class="single-product-cart-top-h2">CHOOSE SIZE</h2>
-                        <select name="size" class="single-product-cart-select">
-                            <option value="xxl">XXL</option>
-                            <option value="xl">XL</option>
-                            <option value="l">L</option>
-                        </select>
-                    </div>
-                    <div class="single-product-cart-box">
-                        <h2 class="single-product-cart-top-h2">QUANTITY</h2>
-                        <input type="number" min="0" max="20" name="quantity" value="3" class="single-product-cart-select">
-                    </div>
-                </div>
-                <div class="single-product-cart-bottom">
-                    <button type="submit" class="button2 single-product-cart-a"><img class="single-product-cart-img" src="img/single-product-cart.svg" alt="cart">Add to Cart</button>
-                </div>
-            </form>
-        </div>
-    </div>
+    <details class="checkout" open>
 
-    <section class="likealso">
-        <div class="container">
-            <h2 class="likealso-h2">you may like also</h2>
-            <div class="likealso-flex">
-                <div class="product">
-                    <div class="product-image">
-                        <a class="product-img" href="#"><img src="img/products/single/product_2.png" alt="product 2"></a>
-                        <div class="product-cart"><a class="product-cart-a" href="cart">Add to Cart</a></div>
-                    </div>
-                    <a href="#" class="product-title">Mango People T-shirt</a>
-                    <a href="#" class="product-price">$52.00</a>
-                </div>
-                <div class="product">
-                    <div class="product-image">
-                        <a class="product-img" href="#"><img src="img/products/single/product_3.png" alt="product 2"></a>
-                        <div class="product-cart"><a class="product-cart-a" href="cart">Add to Cart</a></div>
-                    </div>
-                    <a href="#" class="product-title">Mango People T-shirt</a>
-                    <a href="#" class="product-price">$52.00</a>
-                </div>
-                <div class="product">
-                    <div class="product-image">
-                        <a class="product-img" href="#"><img src="img/products/single/product_4.png" alt="product 2"></a>
-                        <div class="product-cart"><a class="product-cart-a" href="cart">Add to Cart</a></div>
-                    </div>
-                    <a href="#" class="product-title">Mango People T-shirt</a>
-                    <a href="#" class="product-price">$52.00</a>
-                </div>
-                <div class="product">
-                    <div class="product-image">
-                        <a class="product-img" href="#"><img src="img/products/single/product_5.png" alt="product 2"></a>
-                        <div class="product-cart"><a class="product-cart-a" href="cart">Add to Cart</a></div>
-                    </div>
-                    <a href="#" class="product-title">Mango People T-shirt</a>
-                    <a href="#" class="product-price">$52.00</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </details>
 
     <div class="subscribe">
         <div class="container subscribe-content">
@@ -337,7 +254,7 @@
         <div class="footer-top">
             <div class="container footer-top-content">
                 <div class="footer-about">
-                    <a class="logo" href="#"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+                    <a class="logo" href="index.html"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
                     <p class="footer-about-p">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
                     <p class="footer-about-p">Efficiently plagiarize 24/365 action items and focused infomediaries.
                         Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
@@ -367,10 +284,10 @@
                         <h3 class="footer-information-h3 pink">SHOP CATEGORY</h3>
                         <ul class="footer-information-ul">
                             <li><a href="product.html" class="footer-information-link">Men</a></li>
-                            <li><a href="#" class="footer-information-link">Women</a></li>
-                            <li><a href="#" class="footer-information-link">Child</a></li>
-                            <li><a href="#" class="footer-information-link">Apparel</a></li>
-                            <li><a href="#" class="footer-information-link">Brows All</a></li>
+                            <li><a href="product.html" class="footer-information-link">Women</a></li>
+                            <li><a href="product.html" class="footer-information-link">Child</a></li>
+                            <li><a href="product.html" class="footer-information-link">Apparel</a></li>
+                            <li><a href="product.html" class="footer-information-link">Brows All</a></li>
                         </ul>
                     </div>
                 </nav>
