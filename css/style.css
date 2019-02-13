@@ -47,6 +47,11 @@ body {
   align-items: center;
   margin-left: 37px; }
 
+.header-cart-img {
+  transition: transform 0.3s; }
+  .header-cart-img:hover {
+    transform: scale(1.2) rotate(360deg); }
+
 .button {
   display: inline-block;
   height: 38px;
@@ -59,7 +64,12 @@ body {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.38px;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.3s; }
+  .button:hover {
+    border: 1px solid #f16d7f;
+    background-color: #ffffff;
+    color: #f16d7f; }
 
 .navigation {
   background-color: #ffffff; }

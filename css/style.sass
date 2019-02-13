@@ -49,20 +49,29 @@ body
   align-items: center
   margin-left: 37px
 
+.header-cart-img
+  transition: transform .3s
+  &:hover
+    transform: scale(1.2) rotate(360deg)
+
 .button
   display: inline-block
   height: 38px
   line-height: 38px
   padding-left: 19px
   padding-right: 19px
-  background-color: #f16d7f
+  background-color: $pink
   border: 1px solid #ef5b70
   color: #ffffff
   font-size: 15px
   font-weight: 400
-
   letter-spacing: 0.38px
   text-decoration: none
+  transition: all .3s
+  &:hover
+    border: 1px solid $pink
+    background-color: #ffffff
+    color: $pink
 
 .navigation
   background-color: #ffffff
