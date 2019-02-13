@@ -216,16 +216,59 @@
         </div>
     </div>
 
-    <div class="middle">
+    <form class="check" action=""></form>
         <div class="container">
             <details class="checkout" open>
-                <summary class="checkout__summary">Адресс</summary>
+                <summary class="checkout__summary">01. Shipping Adress</summary>
+                <div class="checkout__flex">
+                    <div class="checkout__column">
+                        <h2 class="checkout__h2">Check as a guest or register</h2>
+                        <p class="checkout__p">Register with us for future convenience</p>
+                        <label class="checkout__label"><input type="radio" name="register" class="checkout__radio">checkout as guest</label>
+                        <label class="checkout__label"><input type="radio" name="register" class="checkout__radio" checked>register</label>
+                        <h2 class="checkout__h2 checkout__h2_margin">register and save time!</h2>
+                        <p class="checkout__p">Register with us for future convenience</p>
+                        <p class="checkout__p checkout__p_margin"><i class="fa fa-angle-double-right"></i> Fast and easy checkout</p>
+                        <p class="checkout__p"><i class="fa fa-angle-double-right"></i> Easy access to your order history and status</p>
+                        <button type="submit" class="btn">Continue</button>
+                    </div>
+                    <div class="checkout__column">
+                        <h2 class="checkout__h2">Already registed?</h2>
+                        <p class="checkout__p">Please log in below</p>
+                        <label class="checkout__label checkout__label_noflex">EMAIL ADDRESS <span class="star">*</span>
+                            <input type="email" class="checkout__input">
+                        </label>
+                        <label class="checkout__label checkout__label_noflex">PASSWORD <span class="star">*</span>
+                            <input type="email" class="checkout__input">
+                        </label>
+                        <p class="checkout__p checkout__p_color">* Required Fileds</p>
+                        <button type="submit" class="btn">Log in</button>
+                        <a class="link checkout__link" href="login.html">Forgot Password?</a>
+                    </div>
+                </div>
             </details>
             <details class="checkout">
-                <summary class="checkout__summary">Адресс</summary>
+                <summary class="checkout__summary">02. BILLING INFORMATION</summary>
+                <h2 class="checkout__h2">Check as a guest or register</h2>
+            </details>
+            <details class="checkout">
+                <summary class="checkout__summary">03. SHIPPING INFORMATION</summary>
+                <h2 class="checkout__h2">Check as a guest or register</h2>
+            </details>
+            <details class="checkout">
+                <summary class="checkout__summary">04. SHIPPING METHOD</summary>
+                <h2 class="checkout__h2">Check as a guest or register</h2>
+            </details>
+            <details class="checkout">
+                <summary class="checkout__summary">05. PAYMENT METHOD</summary>
+                <h2 class="checkout__h2">Check as a guest or register</h2>
+            </details>
+            <details class="checkout">
+                <summary class="checkout__summary">06. ORDER REVIEW</summary>
+                <h2 class="checkout__h2">Check as a guest or register</h2>
             </details>
         </div>
-    </div>
+    </form>
 
     <div class="subscribe">
         <div class="container subscribe-content">

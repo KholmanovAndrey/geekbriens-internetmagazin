@@ -32,7 +32,7 @@ body
 .logo
   display: flex
   align-items: center
-  color: #222222
+  color: $gray
   font-size: 27px
   font-weight: 300
   text-transform: uppercase
@@ -74,7 +74,7 @@ body
   &-link
     padding: 15px
     display: block
-    color: #222222
+    color: $gray
     font-size: 14px
     font-weight: 700
     text-transform: uppercase
@@ -90,13 +90,13 @@ body
     display: flex
     align-items: center
   &-p
-    color: #222222
+    color: $gray
     font-size: 40px
     font-weight: 700
     text-transform: uppercase
     line-height: 33px
   &-h3
-    color: #222222
+    color: $gray
     font-size: 60px
     font-weight: 700
     text-transform: uppercase
@@ -157,7 +157,7 @@ body
 
 
 .block-p
-  color: #222222
+  color: $gray
   font-size: 18px
   font-weight: 400
 
@@ -169,7 +169,7 @@ body
 
 
 .products-h2
-  color: #222222
+  color: $gray
   font-size: 30px
   font-weight: 700
 
@@ -189,7 +189,7 @@ body
   display: block
   padding-top: 18px
   padding-left: 14px
-  color: #222222
+  color: $gray
   font-size: 13px
   font-weight: 400
   text-transform: uppercase
@@ -221,9 +221,12 @@ body
 
 .product
   margin-bottom: 43px
+  transition: transform 0.3s
 
 
 .product:hover
+  transform: scale(1.2)
+  z-index: 2
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
 
 
@@ -380,7 +383,7 @@ body
   border: 1px solid #e6e6e6
   background: #cdcdcc linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
 
-  color: #222222
+  color: $gray
   font-size: 14px
   font-weight: 300
 
@@ -794,6 +797,8 @@ body
 .product-image
   position: relative
 
+.product-img
+  transition: filter .5s
 
 .product:hover .product-img
   filter: brightness(30%)
@@ -1185,8 +1190,8 @@ body
   color: #f16d7f
 
 .single-product-image
-  border-top: 1px solid #eaeaea
-  border-bottom: 1px solid #eaeaea
+  border-top: 1px solid $border_color
+  border-bottom: 1px solid $border_color
   background-color: #f7f7f7
   text-align: center
   height: 777px
@@ -1194,7 +1199,7 @@ body
 .single-product-box
   position: relative
   z-index: 1
-  border: 1px solid #eaeaea
+  border: 1px solid $border_color
   background-color: #ffffff
   margin-top: -85px
   text-align: center
@@ -1216,7 +1221,7 @@ body
     margin-left: -75px
     width: 150px
     height: 1px
-    background-color: #eaeaea
+    background-color: $border_color
     z-index: 1
   &::before
     content: ""
@@ -1268,7 +1273,7 @@ body
   font-weight: 700
 
 .single-product-article
-  border-bottom: 1px solid #eaeaea
+  border-bottom: 1px solid $border_color
   width: 642px
   padding-bottom: 43px
   margin: 0 auto 63px
@@ -1294,7 +1299,7 @@ body
   margin-bottom: 16px
 
 .single-product-cart-select
-  border: 1px solid #eaeaea
+  border: 1px solid $border_color
   background-color: #ffffff
   padding: 12px 15px
   color: #bcbcbc
@@ -1348,7 +1353,7 @@ body
     font-weight: 400
     text-align: center
     &-title
-      color: #222222
+      color: $gray
       font-weight: 700
       text-transform: uppercase
     &-two
@@ -1364,7 +1369,7 @@ body
   &-link
     display: block
     margin-bottom: 30px
-    color: #222222
+    color: $gray
     font-size: 13px
     font-weight: 400
     text-transform: uppercase
@@ -1412,7 +1417,7 @@ body
       text-align: right
   &-h2
     margin-bottom: 22px
-    color: #222222
+    color: $gray
     font-size: 16px
     font-weight: 700
     text-transform: uppercase
@@ -1423,7 +1428,7 @@ body
     font-weight: 300
   &-p2
     margin-bottom: 40px
-    color: #222222
+    color: $gray
     font-size: 16px
     font-weight: 700
     text-transform: uppercase
@@ -1485,7 +1490,7 @@ body
   &-link
     display: block
     text-decoration: none
-    color: #222222
+    color: $gray
     font-size: 12px
     font-weight: 700
     text-transform: uppercase
@@ -1500,16 +1505,100 @@ body
     font-weight: 400
     text-transform: uppercase
 
+.check
+  margin-top: 90px
+
+.btn
+  display: inline-block
+  padding: 20px 55px
+  border: 1px solid $border_color
+  background-color: #ffffff
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  cursor: pointer
+  transition: all .3s
+  &:hover
+    background-color: $pink
+    color: #ffffff
+    border: 1px solid transparent
+
+.link
+  color: $gray
+  font-size: 14px
+  font-weight: 400
+  text-decoration: none
+  transition: color .3s
+  &:hover
+    color: $pink
+
+.star
+  color: #ff0d0d
+
 .checkout
-  width: 100%
-  &__summary::after
-    content: '\25B6'
-  &[open] &__summary::after
-    content: '\25BC'
+  padding-bottom: 30px
+  margin-bottom: 30px
+  border-bottom: 1px solid #e8e8e8
   &__summary::-webkit-details-marker
     display: none
   &__summary
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 10px 20px
+    padding: 10px 0
+    color: $gray
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
+    transition: color .3s
+    &:hover
+      color: $pink
+  &__flex
+    display: flex
+  &__column
+    padding: 20px 35px
+    width: 40%
+  &__h2
+    color: $gray
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 15px
+    &_margin
+      margin-top: 36px
+  &__p
+    color: #b3b2b2
+    font-size: 13px
+    font-weight: 400
+    margin-bottom: 30px
+    &_margin
+      margin-bottom: 15px
+    &_color
+      color: #ff0d0d
+  &__link
+    margin-left: 20px
+  &__label
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    color: $gray
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+    cursor: pointer
+    transition: color .3s
+    &:hover
+      color: $pink
+    &_noflex
+      display: block
+  &__radio
+    margin-right: 15px
+  &__input
+    width: 100%
+    height: 45px
+    padding: 0 20px
+    margin-top: 15px
+    border: 1px solid $border_color
+    background-color: #ffffff
