@@ -88,6 +88,7 @@ body
     font-weight: 700
     text-transform: uppercase
     text-decoration: none
+    transition: color .3s
     &:hover
       color: #f16d7f
 
@@ -203,6 +204,9 @@ body
   font-weight: 400
   text-transform: uppercase
   text-decoration: none
+  transition: color .3s
+  &:hover
+    color: $pink
 
 
 .product-price
@@ -343,6 +347,7 @@ body
     text-decoration: none
     margin-top: 30px
     margin-bottom: 10px
+    transition: all .3s
     &:hover
       background-color: $pink
       color: #ffffff
@@ -360,6 +365,7 @@ body
     text-decoration: none
     margin-top: 30px
     margin-bottom: 10px
+    transition: all .3s
     &:hover
       border: 1px solid #4a4a4a
   &:after
@@ -519,13 +525,18 @@ body
   height: 52px
   border-radius: 0 23px 23px 0
   background-color: #f16d7f
-  border: 0
   color: #ffffff
   font-size: 14px
   font-weight: 400
   padding-left: 21px
   padding-right: 20px
-
+  border: 1px solid transparent
+  transition: all .3s
+  cursor: pointer
+  &:hover
+    border: 1px solid $pink
+    color: $pink
+    background-color: #ffffff
 
 .subscribe-form
   display: flex
@@ -556,19 +567,17 @@ body
   height: 32px
   background-color: #ffffff
   margin-left: 8px
-
   color: #b2b2b2
   font-size: 16px
   font-weight: 400
   text-decoration: none
-
-
-.social:hover,
-.social.active
-  background-color: #f16d7f
-  color: #f7f7f8
-  font-size: 16px
-  font-weight: 400
+  transition: all .3s
+  &:hover,
+  &.active
+    background-color: #f16d7f
+    color: #f7f7f8
+    font-size: 16px
+    font-weight: 400
 
 
 .socials
@@ -611,10 +620,9 @@ body
   font-size: 16px
   font-weight: 400
   text-decoration: none
-
-
-.footer-information-link:hover
-  color: #f16d7f
+  transition: color .3s
+  &:hover
+    color: $pink
 
 
 .footer-top-content
@@ -682,15 +690,14 @@ body
   font-weight: 300
   margin-left: 5px
   margin-right: 5px
-
+  transition: color .3s
+  &:hover
+    color: $pink
 
 .breadcrumb-link.active
   color: #f16d7f
   font-size: 14px
   font-weight: 700
-
-.breadcrumb-link:hover
-  color: #f16d7f
 
 
 .main-content
@@ -831,6 +838,10 @@ body
   border: 1px solid #ef5b70
   background-color: #ffffff
   text-decoration: none
+  transition: all .3s
+  &:hover
+    color: #ffffff
+    background-color: $pink
 
 .products-pagination
   display: flex
@@ -851,11 +862,9 @@ body
   font-size: 16px
   font-weight: bold
   text-decoration: none
-
-
-
-.products-pagination-link:hover
-  color: #ef5b70
+  transition: color .3s
+  &:hover
+    color: #ef5b70
 
 
 
@@ -947,10 +956,9 @@ body
   padding-right: 10px
   padding-left: 10px
   border-right: 1px solid #dfdfdf
-
-
-.trending-link:hover
-  color: #f16d7f
+  transition: color .3s
+  &:hover
+    color: #f16d7f
 
 
 .trending-link:nth-child(3n+1)
@@ -1071,6 +1079,7 @@ body
   color: #6f6e6e
   font-size: 14px
   font-weight: 400
+  transition: color .3s
   &:hover
     color: $pink
 
@@ -1141,9 +1150,9 @@ body
   line-height: 28px
   letter-spacing: 0.35px
   text-decoration: none
-
-.drop-link:hover
-  color: #f16d7f
+  transition: color .3s
+  &:hover
+    color: $pink
 
 .drop-h3-m
   margin-top: 15px
@@ -1272,6 +1281,7 @@ body
     color: #2f2f2f
     margin-left: 5px
     text-decoration: none
+    transition: color .3s
     &:hover
       color: $pink
 
@@ -1383,6 +1393,9 @@ body
     font-weight: 400
     text-transform: uppercase
     text-decoration: none
+    transition: color .3s
+    &:hover
+      color: $pink
   &-text
     color: #6f6e6e
     font-size: 13px
@@ -1410,6 +1423,7 @@ body
       text-transform: uppercase
       text-decoration: none
       border: 1px solid $border_color
+      transition: all .3s
       &:hover
         color: $pink
         border: 1px solid $pink
@@ -1468,6 +1482,7 @@ body
     background-color: #ffffff
     border: 1px solid $border_color
     cursor: pointer
+    transition: all .3s
     &:hover
       color: $pink
       border: 1px solid $pink
@@ -1482,6 +1497,7 @@ body
     font-weight: 700
     text-transform: uppercase
     text-align: center
+    transition: all .3s
     &:hover
       background-color: #ffffff
       color: $pink
@@ -1504,6 +1520,9 @@ body
     font-weight: 700
     text-transform: uppercase
     margin-bottom: 10px
+    transition: color .3s
+    &:hover
+      color: $pink
 
 .rating
   display: flex
