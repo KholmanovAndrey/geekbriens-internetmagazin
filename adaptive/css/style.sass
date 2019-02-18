@@ -1,0 +1,322 @@
+@import "vars"
+@import "mixin"
+
+*
+  margin: 0
+  padding: 0
+  text-decoration: none
+  box-sizing: border-box
+
+html
+  font-size: 16px
+
+body
+  font-family: "Lato", sans-serif
+
+.container
+  max-width: 1440px
+  min-width: 320px
+  margin: 0 auto
+  padding: 0 1rem
+
+.logo
+  padding: 1rem
+  color: #ffffff
+  font-size: 2rem
+  font-weight: 400
+  text-transform: uppercase
+  background-color: #222222
+  &__text
+    display: none
+
+.nav
+  &__mobile
+    padding: 1rem 1.2rem
+    color: #ffffff
+    font-size: 2rem
+    font-weight: 400
+    text-transform: uppercase
+    background-color: #8d8d8d
+  &__menu
+    display: block
+
+.menu
+  list-style-type: none
+  background-color: #8d8d8d
+  &__list
+    margin: 0 2rem
+    border-bottom: $border_width solid #747474
+    &:last-of-type
+      border: 0
+  &__link
+    display: block
+    font-size: 2rem
+    padding: 2rem 0
+    color: #ffffff
+    transition: all .3s
+    &_active
+      border-bottom: $border_width solid $hover_color
+    &:hover
+      color: $hover_color
+
+.search
+  display: none
+  position: relative
+  &:hover &__input
+    position: absolute
+    top: 0
+    left: -250px
+    display: block
+  &__input
+    display: none
+    width: 250px
+    height: 100%
+    padding: 1rem 1.2rem
+    color: #222222
+    font-size: 1rem
+    font-weight: 400
+    background-color: #ffffff
+    border: $border_width solid #222222
+    transition: all .3s
+  &__button
+    padding: .3rem .5rem
+    color: #222222
+    font-size: 2rem
+    font-weight: 400
+    text-transform: uppercase
+    background-color: #ffffff
+    border: $border_width solid #222222
+    cursor: pointer
+    transition: all .3s
+  &:hover &__button
+      background-color: #606060
+      color: #ffffff
+
+.header
+  &__flex
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem 0
+    border-bottom: 1px solid #e5e5e5
+  &__menu
+    position: absolute
+    top: 100%
+    left: 0
+    width: $width_size
+    margin-top: -1rem
+    display: none
+  &__clear
+    flex-grow: 6
+  &__nav
+    order: 1
+  &__link
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem
+    color: #222222
+    font-size: 0
+    font-weight: 400
+    transition: all .3s
+    &:hover
+      color: $hover_color
+    & .fa
+      font-size: 2rem
+
+.flex
+  &__flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+.block
+  width: $width_size
+
+.item
+  background-color: red
+  width: $width_size
+  &_color-1
+    background-color: #d2d2d2
+  &_color-2
+    background-color: #bbbbbb
+  &_color-3
+    background-color: #c2c2c1
+  &__inner
+    position: relative
+  &__1by2
+    padding-top: $width_size * 2
+  &__2by1
+    padding-top: $width_size * 2
+    &:last-of-type
+      border-top: $border_width solid #ffffff
+  &__content
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    flex-wrap: wrap
+  &__element
+    width: $width_size
+    display: flex
+    justify-content: center
+    align-items: center
+    &_color-1
+      background-color: #cacaca
+      height: $width_size / 2
+    &_color-2
+      background-color: #606060
+      height: $width_size / 2
+    &_abs
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+  &__center
+    width: $width_size / 2
+    text-align: center
+  &__title
+    color: #ffffff
+    font-size: 1.5rem
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.075rem
+  &__desc
+    color: #ffffff
+    font-size: 1.125rem
+    font-style: italic
+    text-transform: uppercase
+    letter-spacing: 0.056rem
+  &__image
+    width: $width_size
+    &_filter
+      filter: brightness(30%)
+
+.subscribe
+  padding: 6rem 1rem
+  text-align: center
+  &__title
+    color: #303030
+    font-size: 2.25rem
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.113rem
+    margin-bottom: 2rem
+  &__text
+    color: #606060
+    font-size: 1.125rem
+    font-style: italic
+    letter-spacing: 0.056rem
+    margin-bottom: 3rem
+  &__form
+    display: flex
+    justify-content: center
+  &__input
+    width: 70%
+    padding: 1rem
+    border: 0.063rem solid #c2c2c2
+    color: #606060
+    font-size: 1.25rem
+    font-style: italic
+    letter-spacing: 0.063rem
+  &__button
+    width: 30%
+    padding: 1rem 0
+    text-align: center
+    border: 0.063rem solid #df7634
+    background-color: #ef8440
+    color: #ffffff
+    font-size: 1.25rem
+    font-weight: 400
+    letter-spacing: 0.063rem
+
+footer
+  padding: 1rem 0
+.copyright
+  text-align: center
+  color: #606060
+  font-size: 1.125rem
+  font-style: italic
+  letter-spacing: 0.056rem
+  margin-bottom: 3rem
+
+@media screen and (min-width: 768px)
+  .header__link
+    font-size: 1rem
+    & .fa
+      padding-right: .5rem
+
+  .logo
+    &__text
+      display: inline
+
+  .item
+    &_half
+      width: $width_size / 2
+    &__2by1
+      padding-top: $width_size / 2
+      &:last-of-type
+        border-top: $border_width solid transparent
+    &__element
+      &_half
+        width: $width_size / 2
+      &_color-2
+        height: auto
+
+  .subscribe
+    &__input
+      width: 40%
+    &__button
+      width: 20%
+
+@media screen and (min-width: 1024px)
+  .header
+    &__nav
+      order: 0
+    &__menu
+      position: static
+      width: auto
+      margin-top: 0
+
+  .logo
+    font-size: 2rem
+
+  .nav
+    &__mobile
+      display: none
+    &__menu
+      display: block
+
+  .menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: inherit
+    margin-left: 1rem
+    &__list
+      margin: 0
+      border: 0
+    &__link
+      font-size: 1rem
+      color: #303030
+      padding: 1rem 1.5rem
+
+  .search
+    display: block
+
+  .flex
+    display: flex
+
+  .block
+    width: $width_size / 2
+
+  .subscribe
+    &__input
+      width: 30%
+    &__button
+      width: 10%
